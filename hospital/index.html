@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swami Hospital</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav id="nav-bar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#departments">Departments</a></li>
+            <li><a href="#doctors">Doctors</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#appointments">Appointments</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1>Welcome to Swami Hospital</h1>
+        <p>Providing comprehensive healthcare services for you and your family.</p>
+        <button id="make-appointment-btn">Make an Appointment</button>
+    </section>
+
+    <section id="about">
+        <h1>About Swami Hospital</h1>
+        <p>Swami Hospital is a leading healthcare provider, committed to delivering high-quality medical services to our community.</p>
+    
+        <h2>Additional Information</h2>
+        <p>Mission Statement: Our mission is to provide compassionate care and exceptional medical services to all our patients.</p><br>
+        <p>Services Offered: We offer a wide range of medical specialties including cardiology, oncology, pediatrics, and more.</p><br>
+        <p>Facilities: Our hospital is equipped with state-of-the-art technology and modern facilities to ensure the best possible care for our patients.</p><br>
+        <p>Medical Staff: Meet our team of dedicated healthcare professionals who are committed to your well-being.</p><br>
+        <p>Patient Testimonials: Read what our patients have to say about their experience at Swami Hospital.</p><br>
+    
+        <h2>Images for Clarity</h2>
+        <img src="exterior.jpeg" alt="Swami Hospital Exterior">
+        <img src="interior.jpeg" alt="Swami Hospital Interior">
+        <img src="equipment2.jpeg" alt="Medical Equipment at Swami Hospital">
+        <img src="staff.jpeg" alt="Swami Hospital Medical Staff">
+    </section>
+
+    <section id="services">
+        <h1>Our Services</h1>
+        <ul id="services-list">
+            <li>
+                <h3>Cardiology</h3>
+                <img src="cardiology.jpeg" alt="Cardiology">
+            </li>
+            <li>
+                <h3>Dermatology</h3>
+                <img src="dermatology.jpeg" alt="Dermatology">
+            </li>
+            <li>
+                <h3>Endocrinology</h3>
+                <img src="endocrinology.jpeg" alt="Endocrinology">
+            </li>
+            <li>
+                <h3>Gastroenterology</h3>
+                <img src="gastroenterology.jpeg" alt="Gastroenterology">
+            </li>
+            <li>
+                <h3>Hematology</h3>
+                <img src="hematology.jpeg" alt="Hematology">
+            </li>
+            <li>
+                <h3>Infectious Disease</h3>
+                <img src="infectious-disease.jpeg" alt="Infectious Disease">
+            </li>
+        </ul>
+    </section>
+
+   
+    <section id="departments">
+        <h1>Our Departments</h1>
+        <ul id="departments-list">
+        </ul>
+    </section>
+
+    
+    <section id="doctors">
+        <h1>Our Doctors</h1>
+        <div id="doctors-list">
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1>Get in Touch</h1>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea><br><br>
+            <button id="submit-btn">Submit</button>
+        </form>
+    </section>
+
+    <section id="appointments">
+        <h1>Book an Appointment</h1>
+        <form id="appointment-form">
+            <label for="appointment-date">Date:</label>
+            <input type="date" id="appointment-date" name="appointment-date" required><br><br>
+            <label for="appointment-time">Time:</label>
+            <input type="time" id="appointment-time" name="appointment-time" required><br><br>
+            <label for="appointment-doctor">Doctor:</label>
+            <select id="appointment-doctor" name="appointment-doctor" required>
+            </select><br><br>
+            <button id="book-appointment-btn">Book Appointment</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+
+    <footer>
+        <p>&copy; 2024 Swami Hospital. All rights reserved.</p>
+    </footer>
+</body>
+</html>
